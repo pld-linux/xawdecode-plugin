@@ -4,15 +4,15 @@
 Summary:	Video4Linux Stream Capture Viewer and Descrambler
 Summary(pl):	Program do ogl±dania i dekodowania strumieni Video4Linux
 Name:		xawdecode-plugin
-Version:	1.4.3
+Version:	1.4.4
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://cricrac.free.fr/download/xawdecode/stable/%{name}-%{version}.tar.gz
 # Source0-md5:	07676e5eb45da8e37da2c65b7cef6199
 URL:		http://cricrac.free.fr/
-BuildRequires:	xawdecode-devel >= 1.6.5
-Requires:	xawdecode >= 1.6.5
+BuildRequires:	xawdecode-devel >= 1.8.0
+Requires:	xawdecode >= 1.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
