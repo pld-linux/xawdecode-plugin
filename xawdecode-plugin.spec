@@ -1,7 +1,7 @@
 Summary:	Video4Linux Stream Capture Viewer and Descrambler
 Name:		xawdecode-plugin
 Version:	1.4.2
-Release:	0.1
+Release:	1
 License:	GPL
 Source0:	%{name}-%{version}.tar.gz
 Group:		X11/Applications/Multimedia
@@ -24,8 +24,7 @@ Descrambler plugin for Xawdecode. Static lib.
 %setup -q
 
 %build
-CFLAGS="%{rpmcflags} -I/usr/include/divx" ; export CFLAGS
-%configure --disable-ffmpeg --disable-alsa
+%configure --disable-divx4linux --disable-alsa
 %{__make}
 
 %install
