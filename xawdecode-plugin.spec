@@ -1,24 +1,32 @@
 Summary:	Video4Linux Stream Capture Viewer and Descrambler
+Summary(pl):	Program do ogl±dania i dekodowania strumieni Video4Linux
 Name:		xawdecode-plugin
 Version:	1.4.2
 Release:	1
 License:	GPL
-Source0:	%{name}-%{version}.tar.gz
 Group:		X11/Applications/Multimedia
-Requires:	xawdecode >= 1.6.5
+Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	xawdecode-devel >= 1.6.5
+Requires:	xawdecode >= 1.6.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Descrambler plugin for Xawdecode
+Descrambler plugin for Xawdecode.
+
+%description -l pl
+Wtyczka dekoduj±ca dla Xawdecode.
 
 %package static
 Summary:        Video4Linux Stream Capture Viewer and Descrambler
+Summary(pl):	Program do ogl±dania i dekodowania strumieni Video4Linux
 Group:		X11/Applications/Multimedia
 Requires:	%{name} = %{version}
 
 %description static
 Descrambler plugin for Xawdecode. Static lib.
+
+%description static -l pl
+Wtyczka dekoduj±ca dla Xawdecode - biblioteka statyczna.
 
 %prep
 %setup -q
@@ -35,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -p /sbin/ldconfig
+%post	-p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
 %files
@@ -48,4 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 
 %files static
+%defattr(644,root,root,755)
 %{_libdir}/lib*.a
