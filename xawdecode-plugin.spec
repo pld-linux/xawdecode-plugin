@@ -24,7 +24,8 @@ Descrambler plugin for Xawdecode. Static lib.
 %setup -q
 
 %build
-%configure --disable-divx4linux --disable-alsa
+CFLAGS="%{rpmcflags} -I/usr/include/divx" ; export CFLAGS
+%configure --disable-ffmpeg --disable-alsa
 %{__make}
 
 %install
