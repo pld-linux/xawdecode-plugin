@@ -5,7 +5,8 @@ Version:	1.4.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://cricrac.free.fr/download/xawdecode/%{name}-%{version}.tar.gz
+URL:		http://cricrac.free.fr/
 BuildRequires:	xawdecode-devel >= 1.6.5
 Requires:	xawdecode >= 1.6.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
