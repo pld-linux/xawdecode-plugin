@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://cricrac.free.fr/download/xawdecode/%{name}-%{version}.tar.gz
+# Source0-md5:	829f9e1b42fa5a39f1d2f029cf88f043
 URL:		http://cricrac.free.fr/
 BuildRequires:	xawdecode-devel >= 1.6.5
 Requires:	xawdecode >= 1.6.5
