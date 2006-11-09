@@ -25,7 +25,7 @@ Wtyczka dekoduj±ca dla Xawdecode.
 Summary:	Video4Linux Stream Capture Viewer and Descrambler
 Summary(pl):	Program do ogl±dania i dekodowania strumieni Video4Linux
 Group:		X11/Applications/Multimedia
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description static
 Descrambler plugin for Xawdecode. Static lib.
